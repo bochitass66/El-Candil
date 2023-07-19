@@ -123,7 +123,9 @@
 
   .about-image img,
   .team-thumb img {
-    width: 100%;
+    width: 30vw;
+    margin-top: -25vh;
+    margin-left: 5vw;
   }
   
   #google-map iframe {
