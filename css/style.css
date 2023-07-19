@@ -199,7 +199,7 @@
     animation: spinner .9s linear infinite;
   }
 
-  @-webkit-@keyframes spinner {
+  @-webkit-keyframes spinner {
     to {transform: rotate(360deg);}
   }
 
@@ -416,7 +416,7 @@
     border: 2px solid #d9d9d9;
     background: transparent;
     display: block;
-    -webkit-backface-visibility: visible;
+    /* -webkit-backface-visibility: visible; */
     transition: opacity 200ms ease;
     border-radius: 30px;
   }
