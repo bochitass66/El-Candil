@@ -1,8 +1,13 @@
  @import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
+ @font-face {
+  font-family: 'Akrobat-Black';
+  src: url(/fonts/Akrobat-Black.otf);
+  font-weight: bolder;
+ }
 
   body {
     background: #ffffff;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Akrobat-Black';
     overflow-x: hidden;
   }
 
@@ -138,7 +143,7 @@
     border-radius: 0;
     border: 0;
     color: #f9f9f9;
-    font-size: inherit;
+    font-size: 1.4em;
     font-weight: normal;
     padding: 10px 25px;
     transition: 0.5s 0.2s;
@@ -161,7 +166,7 @@
     flex-flow: row nowrap;
     justify-content: center;
     align-items: center;
-    background-image: url(../images/back-rojo.png);
+    background-image: url(../images/back-rojo-min.png);
   }
 
   .logospin {
@@ -222,8 +227,10 @@
     position: relative;
   } */
   .custom-navbar .navbar-brand img {
-    margin-left: -17vw;
-    margin-top: -29vh;
+    margin-left: -4vw;
+    margin-top: -3.5vh;
+    width: 13vw;
+    height: 10vh;
   }
 
   .logo-scroll {
@@ -287,8 +294,8 @@
   }
 
   .custom-navbar .nav li a {
-    font-size: 12px;
-    font-weight: bold;
+    font-size: 19px;
+    font-weight: lighter;
     color: #ffffff;
     padding-right: 22px;
     padding-left: 22px;
@@ -322,6 +329,15 @@
   .custom-navbar .navbar-toggle .icon-bar {
     background: #252525;
     border-color: transparent;
+  }
+
+  @media(min-width:375px) and (max-width:550px){
+    .custom-navbar .navbar-brand img {
+      margin-left: -1vw;
+      margin-top: -2vh;
+      width: 30vw;
+      height: 7vh;
+    }
   }
 
   @media(min-width:768px) {
@@ -423,23 +439,23 @@
   }
 
   .slider .item {
-    background-position: inherit;
+    background-position: center;
     background-repeat: no-repeat;
     background-attachment: local;
     background-size: cover;
-    height: 650px;
+    height: 100vh;
   }
 
   .slider .item-first {
-    background-image: url(../images/DSC02152.png);
+    background-image: url(../images/DSC02152-min.png);
   }
 
   .slider .item-second {
-    background-image: url(../images/14.\ _MG_4675ps.jpg);
+    background-image: url(../images/14.\ _MG_4675ps-min.jpg);
   }
 
   .slider .item-third {
-    background-image: url(../images/DSC02092.png);
+    background-image: url(../images/DSC02092-min.png);
   }
 
   .slider .item-second .section-btn {
@@ -671,7 +687,7 @@
   -----------------------------------------*/
 
   #testimonial {
-    background: url('../images/el\ candil-56.jpg') center center no-repeat;
+    background: url(../images/el\ candil-56-min.jpg) center center no-repeat;
     background-size: cover;
   }
 
@@ -810,7 +826,7 @@
 
   .footer-open-hour {
     background: #ce3232;
-    background: url('../images/el\ candil-67.jpg') center center no-repeat;
+    background: url('../images/el\ candil-67-min.jpg') center center no-repeat;
     background-size: cover;
     border-radius: 20px;
     margin-top: 0;
