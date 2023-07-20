@@ -232,7 +232,7 @@
     margin-left: -4vw;
     margin-top: -3.5vh;
     width: 12vw;
-    height: 11vh;
+    height: auto;
   }
 
   .logo-scroll {
@@ -335,7 +335,7 @@
   }
 
   .custom-navbar .navbar-toggle .icon-bar {
-    background: #ce3232;
+    background: #ffffff;
     border-color: transparent;
   }
 
@@ -344,7 +344,7 @@
       margin-left: -1vw;
       margin-top: -2vh;
       width: 30vw;
-      height: 7vh;
+      height: auto;
     }
     .about-image img{
       padding-bottom: 20vh;
@@ -446,7 +446,7 @@
     background-color: rgba(20,20,20,0.2);
     height: 100%;
     color: #fff;
-    cursor: e-resize;
+    cursor: context-menu;
     padding: 4em 0 0 2em;
   }
 
@@ -999,7 +999,7 @@
     }
 
     .custom-navbar {
-      background: #ffffff;
+      background: #ce3232;
       -webkit-box-shadow: 0 1px 30px rgba(0, 0, 0, 0.1);
       -moz-box-shadow: 0 1px 30px rgba(0, 0, 0, 0.1);
       box-shadow: 0 1px 30px rgba(0, 0, 0, 0.1);
@@ -1020,7 +1020,7 @@
 
     .custom-navbar .nav li a,
     .top-nav-collapse .nav li a {
-      color: #575757;
+      color: #ffffff;
     }
 
     .custom-navbar .navbar-nav.navbar-right li {
