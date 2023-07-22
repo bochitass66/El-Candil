@@ -1195,9 +1195,9 @@ body {
 
 .tranding-slide .tranding-slide-img img {
   width: 37rem;
-  height: 42rem;
+  height: auto;
   border-radius: 2rem;
-  object-fit: cover;
+  /* object-fit: cover; */
 }
 
 .tranding-slide .tranding-slide-content {
@@ -1315,3 +1315,5 @@ body {
 .tranding-slider-control .swiper-pagination .swiper-pagination-bullet-active {
   background: var(--primary);
 }
+
+
