@@ -1197,7 +1197,7 @@ body {
   width: 37rem;
   height: auto;
   border-radius: 2rem;
-  /* object-fit: cover; */
+  object-fit: cover;
 }
 
 .tranding-slide .tranding-slide-content {
@@ -1316,4 +1316,23 @@ body {
   background: var(--primary);
 }
 
+/* SWIPER */
 
+swiper-container {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  height: 300px;
+}
+
+swiper-slide img {
+  display: block;
+  width: 100%;
+  border-radius: 4rem;
+}
