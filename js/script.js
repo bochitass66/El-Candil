@@ -30,3 +30,4 @@ var TrandingSlider = new Swiper('.tranding-slider', {
       $('.navbar-brand img').removeClass('logo-scroll');
     }
   });
+  

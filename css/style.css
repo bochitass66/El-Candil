@@ -121,11 +121,15 @@
     text-align: center;
   }
 
-  .about-image img,
-  .team-thumb img {
-    width: 30vw;
+  .about-image img {
+    width: 40vw;
     margin-top: -25vh;
     margin-left: 5vw;
+    filter: brightness(65%);
+  }
+
+  .team-thumb img {
+    border-radius: 25px;
   }
   
   #google-map iframe {
@@ -571,6 +575,7 @@
 
   .team-thumb:hover img {
     transform: scale(1.2);
+    border-radius: 25px;
   }
 
   .team-thumb .social-icon li a {
@@ -1195,7 +1200,7 @@ body {
 
 .tranding-slide .tranding-slide-img img {
   width: 37rem;
-  height: auto;
+  height: 40rem;
   border-radius: 2rem;
   object-fit: cover;
 }
