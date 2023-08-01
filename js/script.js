@@ -34,14 +34,37 @@ var TrandingSlider = new Swiper('.tranding-slider', {
   // EMVIO DE EMAIL FORMULARIO
 
   
+  // const $form = document.querySelector('#form')
+  // const $buttonMailto = document.querySelector('#trucazo')
+
+  // $form.addEventListener('submit', handleSubmit)
+
+  // function handleSubmit(event) {
+  //   event.preventDefault()
+  //   const form = new FormData(this)
+  //   $buttonMailto.setAttribute('href', `mailto:carlosidestefanis@gmail.com?subject=${form.get('name')}${form.get('email')}&body=${form.get('message')}`)
+  //   $buttonMailto.click()
+  // }
+
+
+  // ENVIO DE EMAIL FORMULARIO 2
+
   const $form = document.querySelector('#form')
-  const $buttonMailto = document.querySelector('#trucazo')
 
   $form.addEventListener('submit', handleSubmit)
 
-  function handleSubmit(event) {
+  async function handleSubmit(event) {
     event.preventDefault()
     const form = new FormData(this)
-    $buttonMailto.setAttribute('href', `mailto:carlosidestefanis@gmail.com?subject=${form.get('name')}${form.get('email')}&body=${form.get('message')}`)
-    $buttonMailto.click()
+    const response = await fetch(this.action, {
+      method: this.method,
+      body: form,
+      headers: {
+        'Accept': 'application/json'
+      }
+    })
+    if (response.ok) {
+      this.reset()
+      swal("Gracias por contactarte con nosotros", "Pronto estaremos en contacto", "El Candil");
+    }
   }
