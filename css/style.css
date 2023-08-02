@@ -830,8 +830,9 @@
 
   footer {
     border-top: 1px solid rgba(0,0,0,0.05);
-    padding: 120px 0;
-    padding-bottom: 80px;
+    padding: 10px 0;
+    padding-bottom: 20px;
+    background-image: url(../images/back-rojo-min.png);
   }
 
   footer .section-title {
@@ -844,7 +845,7 @@
 
   footer a,
   footer p {
-    color: #909090;
+    color: #ffffff;
   }
 
   footer strong {
@@ -860,7 +861,7 @@
     margin-top: 20px;
   }
 
-  .footer-open-hour {
+  /* .footer-open-hour {
     background: #ce3232;
     background: url('../images/el\ candil-67-min.jpg') center center no-repeat;
     background-size: cover;
@@ -872,7 +873,7 @@
     z-index: 22;
     right: 20px;
     bottom: 20px;
-  }
+  } */
 
   .footer-open-hour::after {
     background: rgba(29,29,29,0.85);
@@ -899,6 +900,11 @@
     color: #f9f9f9;
   }
 
+  .logofooter {
+    width: 15vw;
+    padding-top: 25px;
+  }
+
 
 
   /*---------------------------------------
@@ -919,7 +925,7 @@
 
   .social-icon li a {
     border-radius: 100px;
-    color: #ce3232;
+    color: #ffffff;
     font-size: 15px;
     width: 35px;
     height: 35px;
@@ -931,7 +937,7 @@
   }
 
   .social-icon li a:hover {
-    background: #ce3232;
+    background: #454545;
     color: #ffffff;
   }
 
