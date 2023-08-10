@@ -530,7 +530,8 @@
 
   .about-image {
     position: relative;
-    top: 30vh;
+    top: 15vh;
+
   }
 
 
@@ -720,7 +721,10 @@
   -----------------------------------------*/
 
   #testimonial {
-    background: url(../images/el\ candil-56.jpg) center center no-repeat;
+    position: relative;
+    overflow: hidden;
+    background: url(../images/el\ candil-56.jpg);
+    background-position-y: top;
     background-size: cover;
   }
 
@@ -832,7 +836,7 @@
     border-top: 1px solid rgba(0,0,0,0.05);
     padding: 10px 0;
     padding-bottom: 20px;
-    background-image: url(../images/back-rojo-min.png);
+    background-image: url(../images/back\ negro.jpg);
   }
 
   footer .section-title {
@@ -875,7 +879,7 @@
     bottom: 20px;
   } */
 
-  .footer-open-hour::after {
+  /* .footer-open-hour::after {
     background: rgba(29,29,29,0.85);
     content: "";
     position: absolute;
@@ -898,7 +902,7 @@
 
   .footer-open-hour strong {
     color: #f9f9f9;
-  }
+  } */
 
   .logofooter {
     width: 15vw;
@@ -964,6 +968,115 @@
     }
   }
 
+  @media only screen and (min-width: 1441px) and (max-width: 2560px){
+
+    .container{
+      width: 55vw;
+    }
+
+    .custom-navbar .navbar-brand img {
+      margin-left: -4vw;
+      margin-top: -1.5vh;
+      width: 7vw;
+      height: auto;
+    }
+
+    .custom-navbar li a {
+      font-size: 15px !important; 
+    }
+
+    .custom-navbar .navbar-nav.navbar-right .section-btn {
+      display: block;
+      width: 100px;
+      height: auto;
+      margin: 1px auto 1px auto;
+      padding: 10px;
+    }
+
+    .footer-info .section-title img {
+      width: 10vw;
+    }
+
+    #footer .container {
+      padding-top: 10px;
+    }
+
+    footer .section-title {
+      padding-top: 5px;
+    }
+
+    footer {
+      height: 22vh;
+    }
+
+    footer p {
+      font-size: 12px;
+    }
+
+    .social-icon {
+      position: relative;
+      padding: 0;
+      margin: 0;
+    }
+  
+    .social-icon li {
+      display: inline-block;
+      list-style: none;
+      margin-bottom: 2px;
+    }
+  
+    .social-icon li a {
+      border-radius: 100px;
+      color: #ffffff;
+      font-size: 15px;
+      width: 27px;
+      height: 27px;
+      line-height: 27px;
+      text-decoration: none;
+      text-align: center;
+      transition: all 0.4s ease-in-out;
+      position: relative;
+    }
+  
+    .social-icon li a:hover {
+      background: #454545;
+      color: #ffffff;
+    }
+
+    .copyright-text p {
+      font-size: 1rem;
+    }
+
+    #home h1 {
+      font-size: 3.5rem;
+    }
+
+    #home h3 {
+      font-size: 1.2rem;
+    }
+
+    #home a {
+      font-size: 2rem;
+    }
+
+    .about-info {
+      padding: 0;
+    }
+
+    .about-image {
+      bottom: 10vh;
+      left: 2vw;
+      width: 45vw;
+    }
+
+    .about-image video {
+      position: relative;
+      text-align:left;
+      width: 33vw;
+    }
+
+  }
+  
 
   @media only screen and (max-width: 992px) {
     section {
@@ -980,6 +1093,10 @@
 
     .about-info {
       padding: 0;
+    }
+    
+    .about-image {
+      padding-bottom: 25vh;
     }
 
     .team-info {
@@ -1075,6 +1192,11 @@
       bottom: 0;
       margin-top: 30px;
     }
+
+    .footer-info .logofooter {
+      width: 70vw;
+      padding-left: 25vw;
+    }
   }
 
 
@@ -1112,13 +1234,13 @@
 
 html {
   font-size: 62.5%;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Akrobat-Black";
   scroll-behavior: smooth;
 }
 
 @media (min-width: 1440px) {
   html {
-    zoom: 1.5;
+    zoom: 1.3;
   }
 }
 
