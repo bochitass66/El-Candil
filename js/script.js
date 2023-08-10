@@ -49,6 +49,6 @@ var TrandingSlider = new Swiper('.tranding-slider', {
     })
     if (response.ok) {
       this.reset()
-      swal("Gracias por contactarte con nosotros", "Pronto estaremos en contacto", "successful");
+      swal("Gracias por contactarte con nosotros", "Pronto estaremos en contacto", "success");
     }
   }
