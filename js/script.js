@@ -5,14 +5,19 @@ var TrandingSlider = new Swiper('.tranding-slider', {
     loop: true,
     slidesPerView: 'auto',
     coverflowEffect: {
-      rotate: 0,
+      rotate: 20,
       stretch: 0,
-      depth: 100,
-      modifier: 2.5,
+      depth: 200,
+      modifier: 1,
+      slideShadow: true,
     },
     pagination: {
       el: '.swiper-pagination',
       clickable: true,
+    },
+    autoplay: {
+      delay: 2000,
+      diseableOnInteraction: false,
     },
     navigation: {
       nextEl: '.swiper-button-next',
